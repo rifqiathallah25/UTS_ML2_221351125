@@ -64,4 +64,3 @@ if st.button("Prediksi Diagnosis"):
     diagnosis = label_encoder.inverse_transform([predicted_label])[0]
 
     st.success(f"Prediksi diagnosis: **{diagnosis.upper()}**")
-    st.write(f"Probabilitas: {np.max(prediction) * 100:.2f}%")
